@@ -25,7 +25,7 @@ public class GetVertices extends HttpServlet {
         ArrayList<Line> lines = new ArrayList<>();
         lines.add(new Line(new int[]{100, 200}, new int[]{200, 200}));
         lines.add(new Line(new int[]{150, 100}, new int[]{150, 300}));
-        lines.add(new Line(new int[]{100, 250}, new int[]{300, 250}));
+        lines.add(new Line(new int[]{100, 250}, new int[]{140, 250}));
         request.setAttribute("lines", lines);
         request.getRequestDispatcher("./line.jsp").forward(request, response);
     }
